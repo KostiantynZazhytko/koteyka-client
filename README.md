@@ -2,13 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, create the `.env` file and add:
 
+```bash
+NEXT_PUBLIC_API_URL=http://localhost:1337
+
+# for local
+NEXT_PUBLIC_IMAGE_URL=http://localhost:1337 
+```
+
+Second, run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
