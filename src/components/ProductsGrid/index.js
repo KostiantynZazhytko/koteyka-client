@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard";
 const ProductsGrid = ({ products = [] }) => {
   return (
     <div className="grid grid_products">
-      {products.map((product) => {
+      {products?.map((product) => {
         return (
           <div key={product.id} className="grid_item">
             <ProductCard {...product} />

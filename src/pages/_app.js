@@ -12,7 +12,7 @@ import Router from "next/router";
 import Head from "next/head";
 
 Router.events.on("routeChangeStart", (url) => {
-  console.log(`Loading: ${url}`);
+  // console.log(`Loading: ${url}`);
   NProgress.start();
 });
 Router.events.on("routeChangeComplete", () => NProgress.done());

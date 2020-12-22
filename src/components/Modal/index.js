@@ -9,6 +9,13 @@ export function Modal({ children, ...props }) {
     </ReactModal>
   );
 }
+export function ModalFilter({ children, ...props }) {
+  return (
+    <ReactModal className="modal_filter" overlayClassName="modal-overlay" {...props}>
+      {children}
+    </ReactModal>
+  );
+}
 
 export function ModalTitle({ children, ...props }) {
   return (

@@ -8,7 +8,7 @@ import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 export async function getServerSideProps(context) {
   const products = await fetch(`${API_URL}/products`).then((response) =>
@@ -23,8 +23,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      products,
-    }, // will be passed to the page component as props
+      products
+    }
   };
 }
 
@@ -42,6 +42,7 @@ export default function ProductsPage({ products = [] }) {
       .then((response) => response.json())
       .then((json) => setAreas(json));
   }, []);
+
 
   return (
     <div>

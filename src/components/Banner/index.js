@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Banner = () => {
   return (
     <section className="section section_banner">
@@ -13,9 +15,11 @@ const Banner = () => {
                 Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”
               </p>
               <div className="banner__actions">
-                <a href="/" className="button button_primary button_inverse">
-                  Забронировать
-                </a>
+                <Link href="/products">
+                  <a className="button button_primary button_inverse">
+                    Забронировать
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

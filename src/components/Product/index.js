@@ -27,7 +27,7 @@ const Product = ({ product }) => {
                 watchSlidesVisibility
                 watchSlidesProgress
                 breakpoints={{
-                  640: {
+                  768: {
                     direction: "vertical",
                   },
                 }}
@@ -88,7 +88,7 @@ const Product = ({ product }) => {
               <div className="product__properties">
                 {product.features.map((feature) => {
                   return (
-                    <div className="product__property">
+                    <div key={feature.id} className="product__property">
                       <Icon name={feature.slug} />
                       {feature.title}
                     </div>

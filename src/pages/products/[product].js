@@ -11,7 +11,7 @@ import Link from "next/link";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 export async function getServerSideProps(context) {
   const productId = context.params.product;
