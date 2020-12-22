@@ -92,7 +92,7 @@ export default function HomePage({ products, reviews }) {
                           <div className="card card_product-2">
                             <div className="card__media">
                               <img
-                                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${product?.featured_image.formats.thumbnail.url}`}
+                                src={`${process.env.NEXT_PUBLIC_IMAGE_URL ?? ""}${product?.featured_image.formats.thumbnail.url}`}
                                 className="card__image"
                                 alt=""
                               />
